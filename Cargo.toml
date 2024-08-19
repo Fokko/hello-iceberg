@@ -4,11 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+rust-version = "1.77.1"
 
 [dependencies]
 
-iceberg = { git = "https://github.com/apache/iceberg-rust" }
-iceberg-catalog-rest = { git = "https://github.com/apache/iceberg-rust" }
+iceberg = { git = "https://github.com/apache/iceberg-rust", tag = "v0.3.0-rc.1" }
+iceberg-catalog-rest = { git = "https://github.com/apache/iceberg-rust", tag = "v0.3.0-rc.1" }
 
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 
